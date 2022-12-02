@@ -13,25 +13,26 @@ body {
     align-items: center;
 }
 
+.itemj {
+    width: 60%;
+    min-width: 300px;
+    padding: 1rem;
+}
+
 
 .containerJ {
+    align-items: center;
     display: flex;
-}
-
-.gridcontainer-1 {
-    
-
-
-}
-
-.gridcontainer-2 {
+    margin: auto;
+    width: 60%;
+    min-width: 300px;
+    padding: 1rem;
     
 }
 
-.gridcontainer-3 {
-    
+.colorcontainer {
+    background-color: F7F5F4;
 }
-
 
 
 /*----------------- COMPONENTS -----------------*/
