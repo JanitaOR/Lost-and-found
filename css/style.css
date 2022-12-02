@@ -115,11 +115,20 @@ p {
 
 /* FOOTER */
 
-footer {
+/*footer {
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    column-gap: 15rem;
-    justify-content: center;
+    align-items:baseline;
+    width: 100%;
+    background-color: #467B5F;
+    padding-block: 10rem;
+}*/
+footer {
+    display: grid;
+    grid-template-rows: 2fr;
+    justify-content: space-evenly;
+    align-items:baseline;
     width: 100%;
     background-color: #467B5F;
     padding-block: 10rem;
@@ -155,9 +164,20 @@ footer > .logo > .company_logos {
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
+footer > .logo > .company_logos > li > ul > img {
+    height: 4rem;
+}
 
 @media (max-width:1024px) {
 
+
+footer {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    row-gap: 5rem;
+    padding-inline: 5rem;
+}
 }
 
 @media (max-width:768px) {
