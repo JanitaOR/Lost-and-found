@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+/* 18px = 1 rem */
+/* 36px = 2 rem */
+/* 45px = 2.5 rem */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -63,3 +68,54 @@ p {
     line-height: 1.5rem;
     font-style: uppercase;
 }
+
+
+
+/* BUTTONS */
+
+
+.button-text {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 15px 32px;
+}
+
+
+.button-plain .button-text {
+    color: #467B5F;
+    border-radius: 12px;
+    
+}
+
+
+.button-my-account {
+    color: #467B5F;
+    border-radius: 12px;
+}
+
+
+.button-arrow-right {
+    color: #467B5F;
+    border-radius: 12px;
+}
+
+
+.button-arrow-left {
+    color: #467B5F;
+    border-radius: 12px;
+}
+
+
+.button-phonecall {
+    color: #467B5F;
+    border-radius: 12px;
+}
+
+
+.button-goback {
+    color: #c0bebe;  /* finn ut hvordanlage 10% transparency */
+    border-radius: 12px;
+}
+
