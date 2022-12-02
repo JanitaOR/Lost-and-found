@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap');
 
 
 *{
@@ -8,7 +9,6 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #D9D9D9;
     justify-content: center;
     align-items: center;
 }
@@ -48,6 +48,30 @@ body {
     grid-area: b6;
 }
 
+/*---------------- Herobanner-------------------*/
+
+.hero_banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainpicture {
+    width: 730px;
+    height: 600px;
+
+    
+}
+
+h1 {
+    width: 100%;
+    margin: 6rem;
+    padding: -50px 0 0 0;
+
+}
+
+
 
 
 /*----------------- COMPONENTS -----------------*/
@@ -78,6 +102,23 @@ h3 {
     letter-spacing: -2%;
     line-height: 2rem;
 }
+h4 {
+    color: #467B5F;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.563rem;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 2rem;
+}
+
+h5 {
+    color: #467B5F;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 2rem;
+}
 p {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
@@ -94,4 +135,63 @@ p {
     letter-spacing: 0%;
     line-height: 1.5rem;
     font-style: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15rem;
+    justify-content: center;
+    width: 100%;
+    background-color: #467B5F;
+    padding-block: 10rem;
+}
+footer > section > div > li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+footer > section > div > li > ul > p {
+    color: white;
+}
+footer > section > div > h4 {
+    color: white;
+}
+footer > section > div > img {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+footer > section > .follow {
+    margin-top: 5rem;
+}
+footer > section > .social_icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+footer > section > .social_icons > img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+footer > .logo > .company_logos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+@media (max-width:1024px) {
+
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:425px) {
+
+}
+
+@media (max-width: 320px) {
+
 }
