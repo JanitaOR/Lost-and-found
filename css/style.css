@@ -74,48 +74,28 @@ p {
 /* BUTTONS */
 
 
-.button-text {
+button {
+    border: none;
+    border-radius: 0.6rem;
     font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.9rem 1rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    align-items: center;
+}
+
+
+.button-green {
+    background-color: #467B5F;
+    color: #fff;
+}
+
+
+.button-gray {
+    background-color: #e1e1e1;
     color: #1a1a1a;
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding: 15px 32px;
-}
-
-
-.button-plain .button-text {
-    color: #467B5F;
-    border-radius: 12px;
-    
-}
-
-
-.button-my-account {
-    color: #467B5F;
-    border-radius: 12px;
-}
-
-
-.button-arrow-right {
-    color: #467B5F;
-    border-radius: 12px;
-}
-
-
-.button-arrow-left {
-    color: #467B5F;
-    border-radius: 12px;
-}
-
-
-.button-phonecall {
-    color: #467B5F;
-    border-radius: 12px;
-}
-
-
-.button-goback {
-    color: #c0bebe;  /* finn ut hvordanlage 10% transparency */
-    border-radius: 12px;
 }
 
