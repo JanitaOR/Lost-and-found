@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap');
 
 
-*{
+/* 18px = 1 rem */
+/* 36px = 2 rem */
+/* 45px = 2.5 rem */
+
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     width: 100%;
     height: 100%;
-    background-color: #D9D9D9;
+
+    background-color: #F7F5F4;
+
     justify-content: center;
     align-items: center;
 }
@@ -34,6 +43,30 @@ body {
     background-color: F7F5F4;
 }
 
+/*---------------- Herobanner-------------------*/
+
+.hero_banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainpicture {
+    width: 730px;
+    height: 600px;
+
+    
+}
+
+h1 {
+    width: 100%;
+    margin: 6rem;
+    padding: -50px 0 0 0;
+
+}
+
+
 
 /*----------------- COMPONENTS -----------------*/
 
@@ -47,6 +80,7 @@ h1 {
     letter-spacing: -2%;
     line-height: 3rem;
 }
+
 h2 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
@@ -55,6 +89,7 @@ h2 {
     letter-spacing: -2%;
     line-height: 2.5rem;
 }
+
 h3 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
@@ -63,6 +98,25 @@ h3 {
     letter-spacing: -2%;
     line-height: 2rem;
 }
+
+h4 {
+    color: #467B5F;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.563rem;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 2rem;
+}
+
+h5 {
+    color: #467B5F;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 2rem;
+}
+
 p {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
@@ -71,6 +125,7 @@ p {
     letter-spacing: 0%;
     line-height: 1.5rem;
 }
+
 .menu_item {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
@@ -80,3 +135,95 @@ p {
     line-height: 1.5rem;
     font-style: uppercase;
 }
+
+
+
+
+/* BUTTONS */
+
+
+button {
+    border: none;
+    border-radius: 0.6rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.9rem 1rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    align-items: center;
+}
+
+
+.button-green {
+    background-color: #467B5F;
+    color: #fff;
+}
+
+
+.button-gray {
+    background-color: #e1e1e1;
+    color: #1a1a1a;
+}
+
+=======
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15rem;
+    justify-content: center;
+    width: 100%;
+    background-color: #467B5F;
+    padding-block: 10rem;
+}
+footer > section > div > li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+footer > section > div > li > ul > p {
+    color: white;
+}
+footer > section > div > h4 {
+    color: white;
+}
+footer > section > div > img {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+footer > section > .follow {
+    margin-top: 5rem;
+}
+footer > section > .social_icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+footer > section > .social_icons > img {
+    width: 1.5rem;
+    cursor: pointer;
+}
+footer > .logo > .company_logos {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+@media (max-width:1024px) {
+
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:425px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
+
