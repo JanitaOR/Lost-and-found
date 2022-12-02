@@ -22,39 +22,25 @@ body {
     align-items: center;
 }
 
-.gridcontainer-1 {
-    padding: 20% 20px;
+.itemj {
     width: 60%;
-    display: grid;
-    grid-template-areas: 
-        'b1 b2'
-        'b3 b4'
-        'b5 b6'
-    ;
+    min-width: 300px;
+    padding: 1rem;
 }
 
-.box-area-1 {
-    grid-area: b1;
+
+.containerJ {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    width: 60%;
+    min-width: 300px;
+    padding: 1rem;
+    
 }
 
-.box-area-1 {
-    grid-area: b2;
-}
-
-.box-area-1 {
-    grid-area: b3;
-}
-
-.box-area-1 {
-    grid-area: b4;
-}
-
-.box-area-1 {
-    grid-area: b5;
-}
-
-.box-area-1 {
-    grid-area: b6;
+.colorcontainer {
+    background-color: F7F5F4;
 }
 
 /*---------------- Herobanner-------------------*/
@@ -79,7 +65,6 @@ h1 {
     padding: -50px 0 0 0;
 
 }
-
 
 
 
