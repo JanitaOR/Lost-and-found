@@ -48,6 +48,29 @@ body {
     grid-area: b6;
 }
 
+/*---------------- Herobanner-------------------*/
+
+.hero_banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainpicture {
+    width: 730px;
+    height: 600px;
+    
+}
+
+h1 {
+    width: 100%;
+    margin: 2rem;
+    padding: -50px 0 0 0;
+
+}
+
+
 
 
 /*----------------- COMPONENTS -----------------*/
