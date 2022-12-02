@@ -13,39 +13,23 @@ body {
     align-items: center;
 }
 
+
+.containerJ {
+    display: flex;
+}
+
 .gridcontainer-1 {
-    padding: 20% 20px;
-    width: 60%;
-    display: grid;
-    grid-template-areas: 
-        'b1 b2'
-        'b3 b4'
-        'b5 b6'
-    ;
+    
+
+
 }
 
-.box-area-1 {
-    grid-area: b1;
+.gridcontainer-2 {
+    
 }
 
-.box-area-1 {
-    grid-area: b2;
-}
-
-.box-area-1 {
-    grid-area: b3;
-}
-
-.box-area-1 {
-    grid-area: b4;
-}
-
-.box-area-1 {
-    grid-area: b5;
-}
-
-.box-area-1 {
-    grid-area: b6;
+.gridcontainer-3 {
+    
 }
 
 
