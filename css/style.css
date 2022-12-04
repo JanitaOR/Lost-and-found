@@ -117,18 +117,15 @@ p {
 
 footer {
     width: 100%;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    align-items: baseline;
     background-color: #467B5F;
-    padding-block: 10rem;
-}
-footer > section {
-    display: flex;
-    flex-direction: row;
-    column-gap: 10rem;
+    padding-block: 5rem;
     justify-content: center;
+    align-items: center;
+}
+footer > .row_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
 }
 footer > section > div > h4 {
     color: white;
@@ -142,11 +139,20 @@ footer > section > div > li > p {
     line-height: 1.7rem;
     font-weight: 300;
 }
+footer > section > div > .logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+}
 footer > section > div > .logo > img {
     max-width: 6rem;
     margin-top: 1rem;
 }
 
+/*
 footer > .row-two > .socials {
     display: flex;
     flex-direction: row;
@@ -156,18 +162,14 @@ footer > .row-two > .socials {
 }
 footer > .row-two > .socials > img {
     max-width: 1.5rem;
-    cursor: pointer;
 }
+*/
 
 @media (max-width:1024px) {
 
 
 footer {
-    display: flex;
     justify-content:center;
-    flex-direction: column;
-    row-gap: 5rem;
-    padding-inline: 5rem;
 }
 }
 
