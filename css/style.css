@@ -125,6 +125,18 @@ footer {
     background-color: #467B5F;
     padding-block: 10rem;
 }
+footer > .contact > h4 {
+    color: white;
+}
+footer > .navigation > h4 {
+    color: white;
+}
+footer > .contact > li > p {
+    color: white;
+    list-style: none;
+    font-weight: 300;
+}
+
 footer > section > div > li {
     display: flex;
     flex-direction: column;
@@ -159,6 +171,7 @@ footer > .logo > .company_logos {
 footer > .logo > .company_logos > li > ul > img {
     height: 4rem;
 }
+
 
 @media (max-width:1024px) {
 
