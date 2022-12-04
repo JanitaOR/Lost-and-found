@@ -116,62 +116,48 @@ p {
 /* FOOTER */
 
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-content:center;
-    flex-direction: row;
-    align-items:baseline;
     width: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    align-items: baseline;
     background-color: #467B5F;
     padding-block: 10rem;
 }
-footer > .contact > h4 {
-    color: white;
-}
-footer > .navigation > h4 {
-    color: white;
-}
-footer > .contact > li > p {
-    color: white;
-    list-style: none;
-    font-weight: 300;
-}
-
-footer > section > div > li {
+footer > section {
     display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-}
-footer > section > div > li > ul > p {
-    color: white;
+    flex-direction: row;
+    column-gap: 10rem;
+    justify-content: center;
 }
 footer > section > div > h4 {
     color: white;
 }
-footer > section > div > img {
+footer > section > div > li {
+    list-style: none;
     margin-top: 1rem;
-    margin-bottom: 1.2rem;
 }
-footer > section > .follow {
-    margin-top: 5rem;
+footer > section > div > li > p {
+    color: white;
+    line-height: 1.7rem;
+    font-weight: 300;
 }
-footer > section > .social_icons {
+footer > section > div > .logo > img {
+    max-width: 6rem;
+    margin-top: 1rem;
+}
+
+footer > .row-two > .socials {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
 }
-footer > section > .social_icons > img {
-    width: 1.5rem;
+footer > .row-two > .socials > img {
+    max-width: 1.5rem;
     cursor: pointer;
 }
-footer > .logo > .company_logos {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-}
-footer > .logo > .company_logos > li > ul > img {
-    height: 4rem;
-}
-
 
 @media (max-width:1024px) {
 
