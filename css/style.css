@@ -146,7 +146,10 @@ p {
     font-style: uppercase;
 }
 
+
+
 /* NAVIGATION BAR */
+
 
 header {
     display: flex;
@@ -156,9 +159,14 @@ header {
     padding: 1rem;
 }
 
+.logo {
+    display: inline-block;
+    padding-left: 3rem;
+}
+
 header ul {
     list-style-type: none;
-    padding: 1rem;
+    padding: 1rem 7rem 1rem 1rem;
 }
 
 header ul li {
@@ -179,6 +187,7 @@ header ul li a {
 header ul li a:hover {
     color: #467B5F;
 }
+
 /* BUTTONS */
 
 
@@ -189,6 +198,7 @@ button {
     font-size: 1rem;
     font-weight: 300;
     padding: 0.9rem 1rem;
+    margin: 0rem 1rem 0rem 1rem;
     display: flex;
     flex-direction: row;
     column-gap: 0.8rem;
