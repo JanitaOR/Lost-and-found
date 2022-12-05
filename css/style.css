@@ -136,8 +136,38 @@ p {
     font-style: uppercase;
 }
 
+/* NAVIGATION BAR */
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
 
+header ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    display: block;
+    color: #1a1a1a;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #467B5F;
 
 /* BUTTONS */
 
@@ -167,7 +197,6 @@ button {
     color: #1a1a1a;
 }
 
-=======
 /* FOOTER */
 
 footer {
@@ -224,6 +253,7 @@ footer > .logo > .company_logos {
 }
 
 @media (max-width: 320px) {
+
 
 }
 
