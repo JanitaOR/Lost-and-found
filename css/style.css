@@ -151,14 +151,14 @@ footer > .partners {
     border-bottom: 1px solid white;
     padding-bottom: 1rem;
 }
-.footer > .partners > ul {
+.footer > .partners > .logos > ul {
     display: flex;
     flex-direction: row;
     column-gap: 2rem;
     align-items: center;
     justify-content: center;
 }
-footer > .partners > ul > img {
+footer > .partners > .logos > ul > img {
     max-width: 7em;
 }
 
