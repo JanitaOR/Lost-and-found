@@ -143,8 +143,13 @@ footer > .socials_and_copyright {
     flex-direction: column;
     row-gap: 2rem;
 }
-footer .partners {
+footer > .partners {
     width: 100%;
+}
+.footer > .partners > h4 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
 }
 .footer > .partners > ul {
     display: flex;
@@ -154,7 +159,7 @@ footer .partners {
     justify-content: center;
 }
 footer > .partners > ul > img {
-    max-width: 10rem;
+    max-width: 7em;
 }
 
 @media (max-width:1024px) {
