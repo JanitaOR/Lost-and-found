@@ -24,9 +24,18 @@ body {
 
 /*---------------------artikler----------------------*/
 
+
+/*
+.hidden-mobil {
+    display: none;
+}
+*/
+
+
 .containerJ{
     display: grid;
     margin: auto;
+    width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto;
     padding:  10px 20%;
@@ -35,27 +44,24 @@ body {
     'b1 b2'
     'b3 b2'
     ;
-    
 }
 
 .containerJ2 {
     display: grid;
     margin: auto;
+    width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    
     padding: 10px 20%;
     grid-template-areas: 
     'b1 b2'
     'b1 b3'
     ;
-   
-
 }
 
 .itemj {
     /*bilde*/
-    width: 400px;
+    width: 22rem;
     
     padding: 1rem 2rem;
     align-self: center;
@@ -64,16 +70,14 @@ body {
 
 .itemj2 {
     /*tekst*/
-    width: 500px;
-    
+    width: 27rem;
     padding: 1rem 2rem;
     margin: auto;
-    
 }
 
 .button-item {
    
-    padding: 10%;
+padding: 10%;
 }
 
 .b1 {
