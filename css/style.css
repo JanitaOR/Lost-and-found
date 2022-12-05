@@ -38,7 +38,7 @@ body {
     width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    padding:  10px 20%;
+    padding: 20%;
     background-color: #D9D9D9;
     grid-template-areas: 
     'b1 b2'
@@ -50,9 +50,10 @@ body {
     display: grid;
     margin: auto;
     width: 100%;
+    padding: 20%;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    padding: 10px 20%;
+    
     grid-template-areas: 
     'b1 b2'
     'b1 b3'
@@ -61,17 +62,16 @@ body {
 
 .itemj {
     /*bilde*/
-    width: 22rem;
+    width: 100%;
     
-    padding: 1rem 2rem;
     align-self: center;
     margin: auto;
 }
 
 .itemj2 {
     /*tekst*/
-    width: 27rem;
-    padding: 1rem 2rem;
+    width: 100%;
+    
     margin: auto;
 }
 
