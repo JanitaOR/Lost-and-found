@@ -6,6 +6,16 @@
 /* 36px = 2 rem */
 /* 45px = 2.5 rem */
 
+/* Enabling CSS @media Rule to make both desktop and mobile version in same file */
+@media screen {
+}
+
+/* Using rem for better element scaling. 18px = 1 rem */
+html {
+    font-size: 18px;
+    scroll-behavior: smooth; 
+}
+
 
 * {
     margin: 0;
@@ -168,7 +178,7 @@ header ul li a {
 
 header ul li a:hover {
     color: #467B5F;
-
+}
 /* BUTTONS */
 
 
@@ -270,3 +280,25 @@ footer > .logo > .company_logos {
     width: 750px;
     height: 600px;
 }
+
+
+
+/* MEDIA QUERIES - FROM DESKTOP TO MOBILE */
+/* Når skjermen 1-800px, gjelder reglene under. Når større enn 800, gjelder resten av reglene */
+
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .logo {
+        display: block;
+        transform: translateY(3rem);
+        padding-left: 0rem;
+    }
+
+    .hamburger {
+        display: none; 
+    }
+  }
+  
