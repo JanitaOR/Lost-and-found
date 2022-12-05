@@ -48,12 +48,6 @@ body {
     
 }
 
-@media screen and (min-width: 800px) {
-    .hidden-mobil {
-        display: none;
-    }
-    
-}
 
 .containerJ2 {
     display: grid;
@@ -71,24 +65,17 @@ body {
     
 }
 
+/*
 .itemj {
-    /*bilde*/
-    width: 100%;
-    max-width: 400px;
-    align-self: center;
-    margin: auto;
+    display: none;
 }
-
 .itemj2 {
-    /*tekst*/
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
+    display: none;
 }
+*/
 
 .button-item {
-   
-padding: 10%;
+    padding: 10%;
 }
 
 .b1 {
@@ -103,8 +90,23 @@ padding: 10%;
     grid-area: b3;
     
 }
+/*
+@media screen and (min-width: 800px) {*/
+  .itemj {
+    /*bilde*/
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+    margin: auto;
+}
 
-
+.itemj2 {
+    /*tekst*/
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+}
 
 
 /*---------------- Herobanner-------------------*/
