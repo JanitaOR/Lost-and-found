@@ -101,7 +101,7 @@ p {
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0%;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 .menu_item {
     font-family: 'Inter', sans-serif;
@@ -118,13 +118,13 @@ p {
 footer {
     background-color: #467B5F;
     width: 100%;
-    justify-content: space-;
+    justify-content: center;
     align-items: center;
 }
 footer > .columns {
     display: flex;
     flex-direction: row;
-    column-gap: 5rem;
+    column-gap: 10%;
     justify-content: center;
     padding-inline: 10vw;   
     padding-block: 10vh;
@@ -132,6 +132,8 @@ footer > .columns {
 footer > .columns > div > h4 {
     color: white;
     margin-bottom: 1rem;
+    border-bottom: solid 1px white;
+    padding-bottom: 1rem;
 }
 footer > .columns > div > ul > p {
     color: white;
@@ -140,6 +142,19 @@ footer > .socials_and_copyright {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+}
+footer .partners {
+    width: 100%;
+}
+.footer > .partners > ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+footer > .partners > ul > img {
+    max-width: 10rem;
 }
 
 @media (max-width:1024px) {
