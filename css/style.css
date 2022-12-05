@@ -55,7 +55,6 @@ body {
     'b3 b2'
     ;
     gap: 30px;
-    
 }
 
 
@@ -72,17 +71,38 @@ body {
     'b1 b3'
     ;
     gap: 30px;
-    
 }
 
-/*
-.itemj {
-    display: none;
+
+@media screen and (max-width: 800px) {
+   .containerJ, .containerJ2{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'b3';
+        justify-items: center;
+        margin: none;
+        padding: 10px 10%;
+     }
+
+     .containerJ {
+        background-color: transparent;
+     }
+
+    .itemj {
+        display: none;
+    }
+
+    .itemj2 {
+        display: none;
+    } 
+
+    .button-item {
+        
+        align-items: center;
+    }
 }
-.itemj2 {
-    display: none;
-}
-*/
+
+
 
 .button-item {
     padding: 10%;
@@ -116,7 +136,7 @@ body {
     max-width: 500px;
     margin: auto;
 }
-}
+
 
 
 /*---------------- Herobanner-------------------*/
