@@ -55,6 +55,7 @@ body {
 .mainpicture {
     width: 730px;
     height: 600px;
+    border-radius: 16px;
 
     
 }
@@ -231,12 +232,66 @@ footer > .logo > .company_logos {
 
 .ad {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #fff;
+    background-image: url('./assets/kart.jpg'); 
+    margin-inline: 10rem;
+    margin-block: 10rem;
+    border-bottom: solid 30px #467B5F;
+    padding-inline: 20vw;
+    padding-block: 10vh;
+}
+.ad > .ad_content {
     justify-content: center;
     align-items: center;
 }
 
+
 .ad-map {
-    width: 750px;
-    height: 600px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%; 
+   /*transform: translate(40px, 100px);*/
 }
+
+/*.footer-boks {
+    background-color: #66a181;
+    height: 30px;
+    width: 100%;
+}*/
+
+.info_text {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-inline: 3rem;
+    padding-block: 2rem;
+    border-radius: 16px 16px 0px 0px;
+
+}
+.info_text > .tassen {
+    /*transform: translate(0px, 40px);*/
+}
+
+.info_text > .info {
+    /*transform: translate(30px, -45px);*/
+}
+
+.tassen1 {
+width: 120px;
+height: 120px;
+border-radius: 100%;
+/*transform: translate(450px, -80px);*/
+}
+
+.tassen2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+   /* transform: translate(600px, -200px);*/
+}
+
+
