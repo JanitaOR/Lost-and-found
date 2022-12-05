@@ -227,3 +227,16 @@ footer > .logo > .company_logos {
 
 }
 
+/*---------------- Map-Ad -------------------*/
+
+.ad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-map {
+    width: 750px;
+    height: 600px;
+}
