@@ -282,14 +282,28 @@ header ul li a:hover {
 /* Ad */
 
 .ad {
+    background-color: #F7F5F4;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    justify-content: center;
-    margin-inline: auto;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding-block: 5rem;
+    padding-inline: 20vw;
+}
+
+.ad > .add_title > h2 {
+    text-align: left;
+    font-weight: 200;
+}
+
+.ad > .description {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    text-align: left;
 }
 
 /* Info rows */
@@ -299,7 +313,6 @@ header ul li a:hover {
     flex-direction: row;
     column-gap: 5rem;
     width: fit-content;
-    margin-inline: auto;
 }
 .info > section > h4 {
     margin-bottom: 1rem;
@@ -341,12 +354,9 @@ header ul li a:hover {
     flex-direction: row;
     column-gap: 1.5rem;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: fit-content;
     height:fit-content;
-    padding: 1.5rem 2rem;
-    border-radius: 0.9rem;
-    background-color: #F7F5F4; 
 }
 .action_bar > .owner > div > img{
     width: 3rem;
@@ -358,7 +368,7 @@ header ul li a:hover {
     flex-direction: row;
     column-gap: 1rem;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
     height: fit-content;
     margin-bottom: 5rem;
 }
@@ -370,16 +380,6 @@ header ul li a:hover {
     width: 100%;
 }
 
-.description {
-    margin-inline: auto;
-    padding-inline: 20vw;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-items: center;
-    text-align: center;
-}
 
 /* Action buttons */
 
@@ -388,7 +388,7 @@ header ul li a:hover {
     flex-direction: row;
     column-gap: 1rem;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
     height: fit-content;
     margin-block: 5rem;
 }
@@ -447,7 +447,7 @@ header ul li a:hover {
     display: flex;
     flex-direction: row;
     column-gap: 4rem;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     opacity: 50%;
 }
@@ -455,7 +455,7 @@ header ul li a:hover {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 
 }
@@ -493,7 +493,7 @@ footer > section > div > ul > img {
     cursor: pointer;
 }
 footer > .partners {
-    padding-top: 5rem;
+    padding-block: 5rem;
 }
 footer > .partners > ul {
     display: flex;
@@ -506,7 +506,6 @@ footer > .partners > ul > img {
 }
 footer > .copyright {
     color: white;
-    margin-top: 3rem
 }
 footer > .copyright > p {
     color: white;
