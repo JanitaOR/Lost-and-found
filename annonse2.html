@@ -8,74 +8,161 @@
 </head>
 <body>
 <main>
-<header>
+    <header class="header">
+        <div class="nav_logo">
+            <a href="index.html"><img src="./assets/icons/black/pet_black_icon.svg" class="logo" alt="example logo"></a>
+        </div>
+        <nav class="nav_list">
+            <div class="nav_links">
+                <ul> 
+                    <li class="top_menu"><a href="index.html">Hjem</a></li>
+                    <li class="top_menu"><a href="Annonse.html">Annonser</a></li>
+                    <li class="top_menu"><a href="#kart">Kart</a></li>
+                    <li class="top_menu"><a href="#veiledning">Veiledning</a></li>
+                    <li class="top_menu"><a href="#omoss">Om oss</a></li>
+                </ul>
+            </div>
+            <div class="nav_button">
+                <button class="button-green"><img src="./assets/icons/white/user_white_icon.svg">Min side</button>
+            </div>
+            <div class="icons">
+                <img src="./assets/icons/black/user_black_icon.svg" class="my-account" alt="My account">
+                <img src="./assets/icons/black/hamburger-black-icon.svg" class="hamburger" alt="Hamburger menu icon">
+            </div>
+        </nav>
+    </header>
 
-</header>
+<!-- MAP -->
+
+    <section class="map">
+       <div class="map_button_back">
+            <button class="button_gray"><img src="./assets/icons/black/arrow-left_black_icon.svg"><p>Tilbake</p></button>
+        </div>
+        <div class="map_button_scale">
+            <button class="button_gray"><p>Se fullstendig kart</p><img src="./assets/icons/black/scale_black_icon.svg"></button>
+        </div>
+        <div class="pet_pin">
+            <img src="./assets/annonse_bilde_square.jpg">
+        </div>
+    </section>
+
 
 <!-- ANNONSE -->
-    <section class="map">
-        <div class="pet_info">
+
+    <section class="ad">
+        <section class="ad_title">
+            <h2>Beige golden retriever savnet</h2>
+        </section>
+    <section class="description">
+    <p>Tassen stakk når vi gikk fra frisørsalong i Storgaten 19, ble skremt og dro seg ut av halsbåndet. Sist observert igår ettermiddag i området ved sykehuset på Ullevål. Hun bor i Holtandalen, Jervestien, men er vant å være i hagen, ikke kjent i byen, tvilsomt at hun finner veien hjem på egenhånd</p>
+</section>
+<!-- Action bar -->
+
+<section class="action_bar">
+    <section class="owner">
+        <div>
+            <img src="./assets/example_user.jpg">
+            <div>
+                <p class="kicker">EIER</p>
+                <h3>Martine Jensen</h3>
+            </div>
+        </div>
+    </section>
+    <section class="owner">
+        <div>
             <img src="./assets/annonse_bilde_square.jpg">
-            <div class="pet_info_text">
-                <h4>Tassen</h4>
-                <p class="kicker">Savnet siden 28. oktober</p>
+            <div>
+                <p class="kicker">KJÆLEDYR</p>
+                <h3>Tassen</h3>
             </div>
         </div>
     </section>
     
-    <section class="action_bar">
-        <section class="owner">
-            <div>
-                <img src="./assets/example_user.jpg">
-                <h3>Martine Jensen</h3>
-            </div>
-        </section>
-        <section class="action_buttons">
-            <button><img src="./assets/icons/white/phone-white.svg">Kontakt eier</button>
-            <button><img src="./assets/icons/white/info_white_icon.svg">Se i kart</button>
-            <button><img src="./assets/icons/white/info_white_icon.svg">Del annonse</button>
-        </section>
-    </section>
-    <section class="info">
-        <section class="informasjon">
-            <h4>Informasjon</h4>
-            <div class="columns">
-                <div class="column_one">
-                    <p><strong>Savnet</strong></p>
-                    <p><strong>Område</strong></p>
-                    <p><strong>Adresse</strong></p>
-                    <p><strong>ID-merking</strong></p>
-                    <p><strong>Eier</strong></p>
-                </div>
-                <div class="column_two">
-                    <p>28. oktober 2022</p>
-                    <p>Oslo</p>
-                    <p>John Igrens vei 67</p>
-                    <a href="#"><p>DyreID, MittSpor</p></a>
-                    <p>Martine Jensen</p>
-                </div>
-            </div>
-        </section>
-        <section class="utseende">
+</section>
+</section>
+
+
+
+<!-- Info rows -->
+ 
+        <section class="info">
+            <!--<section class="short_description">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, animi.</p>
+            </section>-->
             <section class="informasjon">
-                <h4>Utseende</h4>
+                <h4>Informasjon</h4>
                 <div class="columns">
                     <div class="column_one">
-                        <p><strong>Rase</strong></p>
-                        <p><strong>Kjønn</strong></p>
-                        <p><strong>Pels</strong></p>
-                        <p><strong>Kjennetegn</strong></p>
+                        <p><strong>Savnet</strong></p>
+                        <p><strong>Adresse</strong></p>
+                        <p><strong>Område</strong></p>
+                        <p><strong>ID-merking</strong></p>
                     </div>
                     <div class="column_two">
-                        <p>Golden retriever</p>
-                        <p>Hann</p>
-                        <p>Beige, mellomlangt</p>
-                        <p>Svart snute</p>
+                        <p>28. oktober 2022</p>
+                        <p>John Igrens vei 67</p>
+                        <p>Oslo</p>
+                        <p>DyreID, MittSpor</p>
                     </div>
                 </div>
             </section>
+            <section class="utseende">
+                <section class="informasjon">
+                    <h4>Utseende</h4>
+                    <div class="columns">
+                        <div class="column_one">
+                            <p><strong>Rase</strong></p>
+                            <p><strong>Kjønn</strong></p>
+                            <p><strong>Pels</strong></p>
+                            <p><strong>Kjennetegn</strong></p>
+                        </div>
+                        <div class="column_two">
+                            <p>Golden retriever</p>
+                            <p>Hann</p>
+                            <p>Beige, mellomlangt</p>
+                            <p>Svart snute</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
         </section>
-        </section>
+
+<!-- Action buttons -->
+
+<section class="action_buttons">
+        <button class="big_button"><img src="./assets/icons/white/user_white_icon.svg">Kontakt eier</button>
+            <button class="big_button"><img src="./assets/icons/white/upload_white_icon.svg">Del annonse</button>
+    </section> 
+
+<!-- Photo gallery -->
+
+<div class="container">
+    <ul class="image-gallery">
+      <li>
+        <img src="./assets/Annonse_bildekarusell/golden1.jpg" alt="" />
+      </li>
+      <li>
+        <img src="./assets/Annonse_bildekarusell/golden2.jpg" alt="" />
+      </li>
+      <li>
+        <img src="./assets/Annonse_bildekarusell/golden3.jpg" alt="" />
+      </li>
+    </ul>
+  </div>
+
+
+<!-- Ad nessesary info  -->
+
+<section class="ad_specs">
+    <div>
+        <p><strong>Annonsekode</strong></p>
+        <p>9922F2A</p>
+    </div>
+    <div>
+        <p><strong>Sist endret</strong></p>
+        <p>1. november 12:22</p> 
+    </div>  
+</section>
 
 <!-- FOOTER -->
 
