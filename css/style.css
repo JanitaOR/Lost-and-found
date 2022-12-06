@@ -68,37 +68,79 @@ body {
 
 
 
-.containerJ{
+/* .containerJ{
     display: grid;
     margin: auto;
     width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    padding: 30px 10%;
+    padding: 6rem 10%; 
     background-color: #D9D9D9;
     grid-template-areas: 
     'b1 b2'
-    'b3 b2'
-    ;
-    gap: 30px;
+    'b3 b2';
+    gap: 2rem;
+} */
+
+
+.containerJ {
+    background-color: #D9D9D9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem; 
+}
+
+.containerJ-flex {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 908px) {
+    .containerJ-flex {
+        max-width: 75%;
+    }
 }
 
 
 .containerJ2 {
+    background-color: #D9D9D9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem; 
+}
+
+.containerJ2-flex {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+@media screen and (min-width: 908px) {
+    .containerJ2-flex {
+        max-width: 75%;
+    }
+}
+
+
+
+/*
+.containerJ2 {
     display: grid;
     margin: auto;
     width: 100%;
-    padding: 30px 10%;
+    padding: 6rem 10%; 
     grid-template-columns: auto;
     grid-template-rows: auto;
     
     grid-template-areas: 
     'b1 b2'
-    'b1 b3'
-    ;
-    gap: 30px;
+    'b1 b3';
+    gap: 2rem;
 }
-
+*/
 
 @media screen and (max-width: 800px) {
    .containerJ, .containerJ2{
@@ -106,7 +148,7 @@ body {
         grid-template-rows: auto;
         grid-template-areas: 'b3';
         justify-items: center;
-        margin: none;
+        margin: 0;
         padding: 10px 10%;
      }
 
@@ -131,7 +173,7 @@ body {
 
 
 .button-item {
-    padding: 10%;
+    padding: 1rem 0 1rem 0;
 }
 
 .b1 {
@@ -150,7 +192,6 @@ body {
     grid-area: b3;
     border: none;
     border-radius: 0.6rem;
-    
 }
 
 /*
@@ -202,8 +243,10 @@ h3 {
     font-family: 'Shippori Mincho', serif;
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: -2%;
+    letter-spacing: 5%;
     line-height: 2rem;
+    padding: 1.5rem 0 1.5rem 0; /* lagt inn padding her til forsiden, endre på om nødvendig */
+    width: 65%; /* lagt inn width her til forsiden, endre på om nødvendig */
 }
 
 h4 {
@@ -230,8 +273,11 @@ p {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0%;
-    line-height: 1.5rem;
+    line-height: 1.8rem; 
+    padding: 0.5rem 0 rem 0; /* lagt inn padding her til forsiden, endre på om nødvendig */
+    width: 80%; /* lagt inn width her til forsiden, endre på om nødvendig */
 }
+
 
 .menu_item {
     font-family: 'Inter', sans-serif;
@@ -339,17 +385,14 @@ button {
     align-items: center;
 }
 
-
 .button-green {
     background-color: #467B5F;
     color: #fff;
 }
 
-
 .button-green:hover {
     background-color: #467B5FD9; /* add D9 = 85 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */ 
 }
-
 
 .button-gray {
     background-color: #e1e1e1;
@@ -440,7 +483,7 @@ footer > .logo > .company_logos {
 
 /* MEDIA RULE - DESKTOP TO MOBILE */
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 600px) {
 
     header {
         display: flex;
@@ -450,22 +493,17 @@ footer > .logo > .company_logos {
         padding: 1rem;
     }
 
-    header > nav > .icons {
+    header nav .icons {
         display: flex;
         flex-direction: row;
         column-gap: 1.5rem;
-    }
-
-    .logo {
-        display: inline-block;
-        padding-left: 3rem;
     }
 
     header ul li a {
         display: none;
     }
 
-    .my-account-btn {
+    .nav_button {
         display: none;
     }
     
@@ -475,5 +513,11 @@ footer > .logo > .company_logos {
     
     .hamburger {
         display: block;
+    }
+
+    .nav_logo .logo{
+        display: inline-block;
+        width: 2rem;
+        height: auto;
     }
 }
