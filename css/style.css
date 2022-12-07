@@ -590,5 +590,5 @@ html {
 }
 
 @media (max-width: 320px) {
-
+    width: auto;
 }
