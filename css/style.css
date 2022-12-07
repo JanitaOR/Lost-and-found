@@ -159,9 +159,9 @@ button > img {
     display: none;
 }
 .button_white:hover {
-    border: 1px solid #467B5F;
     cursor: pointer;
-    color: #467B5F;
+    color: white;
+    background-color: #467B5F;
     box-sizing: border-box;
 }
 .button_white:hover > .green {
@@ -454,6 +454,7 @@ hr.solid {
     justify-content: left;
     align-items: center;
     margin-top: 2rem;
+    padding-bottom: 5rem;
 }
 .ad_specs > div {
     display: flex;
@@ -515,6 +516,9 @@ footer > .copyright > p {
     color: white;
     font-size: 0.8rem;
 }
+.mobile_footer {
+    display: none;
+}
 @media (max-width:1024px) {
 
 /* ---------------- ANNONSE ---------------- */
@@ -533,6 +537,24 @@ footer > .copyright > p {
 
 @media (max-width:768px) {
 
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    width: 100%;
+    padding-inline: 2rem;
+    align-items: center;
+}
+footer > section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+footer > section > .socials > h4 {
+    display: none;
+}
+
+}
+
 /* Divider */
 
 hr.solid {
@@ -544,6 +566,7 @@ hr.solid {
 .map {
     width: 100%;
     border-radius: none;
+    margin-top: 0;
 }
 
 /* Ad */
@@ -565,6 +588,10 @@ hr.solid {
     flex-direction: column;
     row-gap: 1rem;
     margin-bottom: 2rem;
+}
+.ad_specs {
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 }
