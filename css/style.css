@@ -2,7 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap');
 
 
-*{
+/* 18px = 1 rem */
+/* 36px = 2 rem */
+/* 45px = 2.5 rem */
+
+/* Enabling CSS @media Rule to make both desktop and mobile version in same file */
+@media screen {
+}
+
+/* Using rem for better element scaling. 18px = 1rem */
+html {
+    font-size: 18px;
+    scroll-behavior: smooth; 
+}
+
+/* Removing default margins and paddings */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,15 +25,176 @@
 html {
     font-size: 16px
 }
+
+
+/*--------------------- Body ----------------------*/
+
 body {
     width: 100%;
     height: 100%;
+
+    background-color: #F7F5F4;
+
     justify-content: center;
     align-items: center;
-    background-color: #F7F5F4;
+
 }
 
 
+
+/*--------------------- Hero banner ----------------------*/
+
+.hero_banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.hero_banner > .text_div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 50%;
+    padding-left: 5rem;
+}
+.hero_banner > .text_div > .hero-banner-btns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+.hero_banner > .hero_image > .mainpicture {
+    height: 50vw;
+}
+
+
+
+/*---------------------artikler----------------------*/
+.containerJ {
+    background-color: #D9D9D9;
+    /*
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+     */
+     display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 50px 20%;
+gap: 10px;
+}
+
+.containerJ2 {
+    /*
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    */
+
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 50px 20%;
+gap: 10px;
+}
+
+.flex-container {
+    display: flex;
+    
+    
+    gap: 50px;
+    
+    
+}
+
+.itemj {
+    /*bilde*/
+    
+   
+    max-width: 350px;
+    min-width: 200px;
+    
+    align-self: center;
+    
+    border-radius: 16px;
+    
+}
+
+.itemj2 {
+    /*tekst*/
+   
+    /*width: 100%;
+    max-width: 500px;
+    align-self: center;
+    min-width: 350px; */
+}
+
+
+.item3 {
+    
+    /*width: 100%;
+    max-width: 500px;
+    align-self: center;
+    min-width: 350px;*/
+}
+
+.button-item {
+    min-width: 200px;
+    padding: 2rem;
+    
+
+}
+
+.colorcontainer {
+}
+
+    @media screen and (max-width: 800px) {
+    
+        .mobil-hidden {
+            display: none;
+        }
+
+        
+
+        .itemj {
+            display: none;
+            
+        }
+
+        .item3 {
+            padding-left: 0;
+        }
+
+        .containerJ {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        .containerJ2 {
+            padding: 0;
+        }
+
+        .button-item {
+            min-width: 0;
+            
+            
+
+        }
+    }
+    
+    
+    @media screen and (min-width: 908px) {
+        /*.containerJ {
+            max-width: 75%;
+        }*/
+        
+    }
+    
+    
+    
 
 /*----------------- COMPONENTS -----------------*/
 
@@ -32,6 +208,7 @@ h1 {
     letter-spacing: -2%;
     line-height: 3rem;
 }
+
 h2 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
@@ -40,14 +217,18 @@ h2 {
     letter-spacing: -2%;
     line-height: 2.5rem;
 }
+
 h3 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
     font-size: 1.5rem;
     font-weight: 500;
-    letter-spacing: -2%;
+    letter-spacing: 5%;
     line-height: 2rem;
+    padding: 1.5rem 0 1.5rem 0; /* lagt inn padding her til forsiden, endre på om nødvendig */
+    width: 65%; /* lagt inn width her til forsiden, endre på om nødvendig */
 }
+
 h4 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
@@ -65,6 +246,7 @@ h5 {
     letter-spacing: -2%;
     line-height: 2rem;
 }
+
 p {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
@@ -86,6 +268,8 @@ strong {
     letter-spacing: 0%;
     line-height: 1rem;
 }
+
+
 .menu_item {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
@@ -96,7 +280,30 @@ strong {
     font-style: uppercase;
 }
 
+
 /* BUTTONS */
+
+.button-green {
+    background-color: #467B5F;
+    color: #fff;
+}
+
+.button-green:hover {
+    background-color: #467B5FD9; /* add D9 = 85 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */ 
+}
+
+.button-gray {
+    background-color: #e1e1e1;
+    color: #1a1a1a;
+}
+
+.button-gray:hover {
+    color: #1a1a1a80; /* add 80 = 50 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */
+}
+
+
+
+/* FOOTER */
 
 
 button {
@@ -598,22 +805,22 @@ hr.solid {
 
 @media (max-width:425px) {
 
-html {
-    font-size: 16px
-}
-/* Map */
+  html {
+      font-size: 16px
+  }
+  /* Map */
 
-.map {
-    width: 100%;
-    border-radius: none;
-    margin-inline: none;
-}
+  .map {
+      width: 100%;
+      border-radius: none;
+      margin-inline: none;
+  }
 
-/* Ad */
+  /* Ad */
 
-.ad {
-    width: 90%;
-}
+  .ad {
+      width: 90%;
+  }
 }
 
 @media (max-width: 320px) {

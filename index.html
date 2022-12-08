@@ -1,15 +1,148 @@
 <!DOCTYPE html>
-<html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lost and found</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<main> 
+    <html lang="no">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Lost and found</title>
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/reset.css">
+        </head>
+        <body>
+
+<!--------------------------- NAVIGATION BAR --------------------------->
+
+        <header class="header">
+            <div class="nav_logo">
+                <a href="index.html"><img src="./assets/logo.png" class="logo" alt="example logo"></a>
+            </div>
+            <nav class="nav_list">
+                <div class="nav_links">
+                    <ul> 
+                        <li class="top_menu"><a href="index.html">Hjem</a></li>
+                        <li class="top_menu"><a href="Annonse.html">Annonser</a></li>
+                        <li class="top_menu"><a href="#kart">Kart</a></li>
+                        <li class="top_menu"><a href="#veiledning">Veiledning</a></li>
+                        <li class="top_menu"><a href="#omoss">Om oss</a></li>
+                    </ul>
+                </div>
+                <div class="nav_button">
+                    <button class="button-green"><img src="./assets/icons/white/user_white_icon.svg">Min side</button>
+                </div>
+                <div class="icons">
+                    <img src="./assets/icons/black/user_black_icon.svg" class="my-account" alt="My account">
+                    <img src="./assets/icons/black/hamburger-black-icon.svg" class="hamburger" alt="Hamburger menu icon">
+                </div>
+            </nav>
+        </header>
+
+<!--------------------------- HERO BANNER --------------------------->
+
+    <main> 
+        <section class="hero_banner">
+            <section class="text_div">
+                <h1>Savner du, eller har du funnet et kjæledyr?</h1>
+                <div class="hero-banner-btns">
+                    <button class="button-green">Savnet<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>
+                    <button class="button-green">Funnet<img src="./assets/icons/white/arrow-right_white_icon.svg"></button> 
+                </div>
+            </section>
+            <section class="hero_image">
+                <img class="mainpicture" src="./assets/hero_image- ny.jpg">
+            </section>
+        </section>
     
-<!--------------------------- FOOTER START --------------------------->
+        
+        <!-- Showroom for buttons
+
+        <p> Knapper til forside desktop: </p>
+        <button class="button-green"><img src="./assets/icons/white/user_white_icon.svg">Min konto</button> <br>
+        <button class="button-green">Savnet<img src="./assets/icons/white/arrow-right_white_icon.svg"></button> <br>
+        <button class="button-green">Funnet<img src="./assets/icons/white/arrow-right_white_icon.svg"></button> <br>
+        <button class="button-green">Annonser<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+        <button class="button-green">Se i kart<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+        <button class="button-green">Ressurser<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+
+        <p> Knapper til forside mobil: </p>
+        <button class="button-green">Savnet</button> <br>
+        <button class="button-green">Funnet</button> <br>
+        <button class="button-green">Annonser<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+        <button class="button-green">Se i kart<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+        <button class="button-green">Ressurser<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+
+        <p> Knapper til annonse desktop + mobil: </p>
+        <button class="button-gray"><img src="./assets/icons/black/arrow-left_black_icon.svg">Tilbake</button>  <br>
+        <button class="button-green">Del annonse</button> <br>
+        <button class="button-green"><img src="./assets/icons/white/phone-white.svg">90745657<img src=""></button> <br>
+        <button class="button-green">Se i kart<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
+        -->
+
+
+<!--------------------------- ARTICLES FRONT PAGE --------------------------->
+
+    <section class="colorcontainer containerJ">
+        <div class="flex-container">
+            <div class="itemj2">
+                <div class="mobil-hidden">
+                <h3>Tenk om noen bare hadde funnet snusken...</h3>
+                <p>
+                    det kan faktisk hende! Sjekk om noen
+                    har lagt ut en annonse, da vel.
+                </p>
+                </div>
+                <div class="button-item">
+                <button class="button-green">Annonser<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  
+            </div>
+                <!--Button-->
+            </div>
+            
+            <img src="./assets/annonse.jpg" class="itemj">
+        </div>
+    </section>
+
+
+
+    <section class="containerJ2">
+        <div class="flex-container">
+        <img src="./assets/kart_bilde.jpg" class="itemj">
+            
+            <div class="item3">
+                <div class="mobil-hidden">
+                    <h3>Uff... Skulle du hatt chipleser?</h3>
+                    <p>
+                        Vi har gjort det enklet for deg, og 
+                        samlet alle fasiliteter på det 
+                        interaktive kartet vårt
+                    </p>
+                </div>
+                <div class="button-item">
+                    <button class="button-green ">Se i kart<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  
+                </div>
+                <!--Button-->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="colorcontainer containerJ">
+        <div class="flex-container">
+            <div class="itemj2">
+                <div class="mobil-hidden">
+                    <h3>Det er ikke like gøy å bli adoptivmor uforberedt</h3>
+                    <p>
+                        Derfor har vi samlet alle nyttig ressurser på en plass 
+                        - lett tilgjengelig for deg.
+                    </p>
+                </div>
+                <div class="button-item">
+                    <button class="button-green ">Ressurser<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  
+                </div>
+                <!--Button-->
+            </div>
+        <img src="./assets/Ressurser.jpg" class="itemj">
+        </div>
+    </section>   
+</section>
+
 
 <!--Desktop-->
 <footer>
@@ -94,8 +227,6 @@
         <p>Dyrebar © <script>document.write(/\d{4}/.exec(Date())[0])</script></p>
     </section>
 </footer>
-<!--------------------------- FOOTER END --------------------------->
 
-</main>
 </body>
 </html>
