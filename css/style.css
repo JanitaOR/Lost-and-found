@@ -20,6 +20,10 @@ html {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px
 }
 
 
@@ -33,6 +37,7 @@ body {
 
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -144,7 +149,6 @@ gap: 10px;
 }
 
 .colorcontainer {
-
 }
 
     @media screen and (max-width: 800px) {
@@ -229,7 +233,7 @@ h4 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
     font-size: 1.563rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: -2%;
     line-height: 2rem;
 }
@@ -238,7 +242,7 @@ h5 {
     color: #467B5F;
     font-family: 'Shippori Mincho', serif;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -2%;
     line-height: 2rem;
 }
@@ -247,11 +251,22 @@ p {
     font-family: 'Inter', sans-serif;
     color: #1a1a1a;
     font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0%;
+    line-height: 1.7rem;
+}
+strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+.kicker {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    opacity: 70%;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0%;
-    line-height: 1.8rem; 
-    padding: 0.5rem 0 rem 0; /* lagt inn padding her til forsiden, endre på om nødvendig */
-    width: 80%; /* lagt inn width her til forsiden, endre på om nødvendig */
+    line-height: 1rem;
 }
 
 
@@ -266,6 +281,103 @@ p {
 }
 
 
+/* BUTTONS */
+
+.button-green {
+    background-color: #467B5F;
+    color: #fff;
+}
+
+.button-green:hover {
+    background-color: #467B5FD9; /* add D9 = 85 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */ 
+}
+
+.button-gray {
+    background-color: #e1e1e1;
+    color: #1a1a1a;
+}
+
+.button-gray:hover {
+    color: #1a1a1a80; /* add 80 = 50 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */
+}
+
+
+
+/* FOOTER */
+
+
+button {
+    border: none;
+    border-radius: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #467B5F;
+    color: white;
+    font-size: 1rem;
+}
+button > img {
+    max-height: 0.8rem;
+}
+.big_button {
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.5rem;
+    background-color: #467B5F;
+    width: fit-content;
+}
+.button_gray {
+    border: none;
+    border-radius: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-size: 1rem;
+}
+.button_white {
+    border: none;
+    border-radius: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.button_white > .green {
+    display: none;
+}
+.button_white:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #467B5F;
+    box-sizing: border-box;
+}
+.button_white:hover > .green {
+    display: block;
+}
+.button_white:hover > .black {
+    display: none;
+}
+
 
 /* NAVIGATION BAR */
 
@@ -277,7 +389,7 @@ header {
     align-items: center;
     padding: 2rem;
     background-color: white;
-    padding-inline: 2rem;
+    padding-inline: 8rem;
 }
 
 header nav {
@@ -304,7 +416,6 @@ header .nav_links ul .top_menu a {
     display: inline-block;
     width: 3rem; /* Finn ut størrelse på logo + evt. tekst */
     height: auto;
-    margin-left: 3rem;
 }
 
 .my-account-btn img {
@@ -342,158 +453,376 @@ header ul li a:hover {
     display: none;
 }
 
+/* ---------------- ANNONSE ---------------- */
 
+/* Map */
 
+.map {
+    background-image: url("../assets/kart.jpg");
+    background-size: cover;
+    width: 60%;
+    border-radius: 0.9rem;
+    height: 30rem;
+    margin-inline: auto;
+    margin-top: 3rem;
+    align-items: bottom;
+    position: relative;
+    background-color: #F7F5F4;
+}
 
-/* BUTTONS */
-
-
-button {
-    border: none;
-    border-radius: 0.6rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    padding: 0.8rem 1rem;
+.map > .pet_info {
     display: flex;
     flex-direction: row;
-    column-gap: 0.8rem;
-    align-items: center;
-}
-
-.button-green {
-    background-color: #467B5F;
-    color: #fff;
-}
-
-.button-green:hover {
-    background-color: #467B5FD9; /* add D9 = 85 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */ 
-}
-
-.button-gray {
-    background-color: #e1e1e1;
-    color: #1a1a1a;
-}
-
-.button-gray:hover {
-    color: #1a1a1a80; /* add 80 = 50 % transparency, from: https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4 */
-}
-
-
-
-/* FOOTER */
-
-footer {
-    display: flex;
-    flex-direction: row;
-    column-gap: 15rem;
+    column-gap: 1.5rem;
+    background-color: #F7F5F4;
+    margin-inline: auto;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
     justify-content: center;
-    width: 100%;
-    background-color: #467B5F;
-    padding-block: 10rem;
+    align-items: center;
+    border-radius: 0.9rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 }
-footer > section > div > li {
+.map > .pet_info > .pet_info_text {
     display: flex;
     flex-direction: column;
     row-gap: 0.5rem;
+    text-align: left;
+    color: #467B5F;
 }
-footer > section > div > li > ul > p {
-    color: white;
+.map > .pet_info > .pet_info_text > .kicker {
+    color: #1a1a1a;
 }
-footer > section > div > h4 {
-    color: white;
+.map > .pet_info > .pet_info_text > h4 {
+    color: #467B5F;
 }
-footer > section > div > img {
-    margin-top: 1rem;
-    margin-bottom: 1.2rem;
+.map > .pet_info > img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
-footer > section > .follow {
-    margin-top: 5rem;
+.map > .pet_pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
-footer > section > .social_icons {
+.map > .pet_pin > img {
+    border-radius: 100%;
+    border: solid 3px #467B5F;
+    width: 3rem;
+    height: auto;
+}
+.map > .map_button_back {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.map > .map_button_scale {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Ad */
+
+.ad {
+    background-color: #F7F5F4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: left;
+    align-items: left;
+    width: 60%;
+    margin-inline: auto;
+}
+
+h2 {
+    text-align: left;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.description {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Info rows */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    width: fit-content;
+}
+.info > section > h4 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+}
+.utseende > section > h4 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+}
+.info > .informasjon > .columns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+}
+
+.info > .utseende > .informasjon > .columns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+/* Action bar */
+
+.action_bar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    
+}
+.action_bar > .owner > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    height:fit-content;
+}
+.action_bar > .owner > div > div > h3 {
+    margin-bottom: 0.2rem;
+
+}
+.action_bar > .owner > div > img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+.action_buttons {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
+    align-content: center;
+    justify-content: left;
+    height: fit-content;
+    margin-bottom: 5rem;
 }
-footer > section > .social_icons > img {
-    width: 1.5rem;
+.action_bar > .buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content:flex-start;
+    width: 100%;
+}
+
+hr.solid {
+    border-top: 1px solid #1a1a1a;
+    border-radius: 0.9rem;
+    opacity: 20%;
+    margin-block: 3rem;
+}
+
+/* Action buttons */
+
+.action_buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-content: center;
+    justify-content: left;
+    height: fit-content;
+    margin-bottom: 0;
+}
+
+/* Photo gallery */
+
+
+/* Necessary info */
+
+.ad_specs {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+}
+.ad_specs > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: left;
+    align-items: center;
+
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    background-color: #467B5F;
+    padding-block: 5rem;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+footer > section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10rem;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+}
+footer > section > div > h4 {
+    color: white;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+footer > section > div > ul > p {
+    color: white;
+}
+footer > section > div > ul > img {
+    max-width: 1.5rem;
+    margin-right: 10px;
     cursor: pointer;
 }
-footer > .logo > .company_logos {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+footer > .partners {
+    padding-block: 5rem;
 }
-
+footer > .partners > ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    overflow: hidden;
+}
+footer > .partners > ul > img {
+    max-height: 2rem;
+}
+footer > .copyright {
+    color: white;
+}
+footer > .copyright > p {
+    color: white;
+    font-size: 0.8rem;
+}
+.mobile_footer {
+    display: none;
+}
 @media (max-width:1024px) {
 
+/* ---------------- ANNONSE ---------------- */
+
+/* Map */
+
+.map {
+    width: 80%;
+}
+
+/* Ad */
+
+.ad {
+    width: 80%;
 }
 
 @media (max-width:768px) {
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    width: 100%;
+    padding-inline: 2rem;
+    align-items: center;
+}
+footer > section {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+footer > section > .socials > h4 {
+    display: none;
+}
+
+}
+
+/* Divider */
+
+hr.solid {
+    margin-block: 2rem;
+}
+
+/* Map */
+
+.map {
+    width: 100%;
+    border-radius: none;
+    margin-top: 0;
+}
+
+/* Ad */
+
+.ad {
+    width: 85%;
+}
+.action_bar {
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: fit-content;
+}
+.action_buttons {
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+.ad_specs {
+    flex-direction: column;
+    row-gap: 1rem;
+}
 
 }
 
 @media (max-width:425px) {
 
+  html {
+      font-size: 16px
+  }
+  /* Map */
+
+  .map {
+      width: 100%;
+      border-radius: none;
+      margin-inline: none;
+  }
+
+  /* Ad */
+
+  .ad {
+      width: 90%;
+  }
 }
 
 @media (max-width: 320px) {
-
-
-}
-
-/*---------------- Map-Ad -------------------*/
-
-.ad {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.ad-map {
-    width: 750px;
-    height: 600px;
-}
-
-
-
-/* MEDIA RULE - DESKTOP TO MOBILE */
-
-  @media only screen and (max-width: 600px) {
-
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    header nav .icons {
-        display: flex;
-        flex-direction: row;
-        column-gap: 1.5rem;
-    }
-
-    header ul li a {
-        display: none;
-    }
-
-    .nav_button {
-        display: none;
-    }
-    
-    .my-account {
-        display: block;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-
-    .nav_logo .logo{
-        display: inline-block;
-        width: 2rem;
-        height: auto;
-    }
+    width: auto;
 }

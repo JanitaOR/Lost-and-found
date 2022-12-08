@@ -1,64 +1,117 @@
 <!DOCTYPE html>
-    <html lang="no">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Lost and found</title>
-            <link rel="stylesheet" href="./css/style.css">
-            <link rel="stylesheet" href="./css/reset.css">
-        </head>
-        <body>
-            
-<!--------------------------- NAVIGATION BAR --------------------------->
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main>
+    <header class="header">
+        <img src="./assets/icons/black/pet_black_icon.svg" class="logo" alt="example logo"> <!-- Legg inn riktig logo her -->
+         <nav>
+             <ul> <!-- Legg inn ekte linker senere istedenfor #link -->
+                 <li class="top menu"><a href="#hjem">Hjem</a></li>
+                 <li class="top menu"><a href="#annonser">Annonser</a></li>
+                 <li class="top menu"><a href="#kart">Kart</a></li>
+                 <li class="top menu"><a href="#veiledning">Veiledning</a></li>
+                 <li class="top menu"><a href="#omoss">Om oss</a></li>
+                 <li class="my-account-btn"><button class="button-green"><img src="./assets/icons/white/user_white_icon.svg">Min side</button></li>
+             </ul>
+             <div class="icons">
+                 <img src="./assets/icons/black/user_black_icon.svg" class="my-account" alt="My account">
+                 <img src="./assets/icons/black/hamburger-black-icon.svg" class="hamburger" alt="Hamburger menu icon">
+             </div>
+         </nav>
+     </header>
 
-        <header class="header">
-            <div class="nav_logo">
-                <a href="index.html"><img src="./assets/logo.png" class="logo" alt="example logo"></a>
-            </div>
-            <nav class="nav_list">
-                <div class="nav_links">
-                    <ul> 
-                        <li class="top_menu"><a href="index.html">Hjem</a></li>
-                        <li class="top_menu"><a href="Annonse.html">Annonser</a></li>
-                        <li class="top_menu"><a href="#kart">Kart</a></li>
-                        <li class="top_menu"><a href="#veiledning">Veiledning</a></li>
-                        <li class="top_menu"><a href="#omoss">Om oss</a></li>
-                    </ul>
+    <section class="map">
+       <section class="pet_and_owner">
+            <section class="pet">
+                <div>
+                    <img src="./assets/annonse_bilde_square.jpg">
                 </div>
-                <div class="nav_button">
-                    <button class="button-green"><img src="./assets/icons/white/user_white_icon.svg">Min side</button>
+                <div>
+                    <p class="kicker">KJÆLEDYR</p>
+                    <h2>Tassen</h2>
+                    <p>Savnet siden 28. oktober</p>
                 </div>
-                <div class="icons">
-                    <img src="./assets/icons/black/user_black_icon.svg" class="my-account" alt="My account">
-                    <img src="./assets/icons/black/hamburger-black-icon.svg" class="hamburger" alt="Hamburger menu icon">
+            </section>
+            <section class="owner">
+                <div>
+                    <img src="./assets/example_user.jpg"> 
                 </div>
-            </nav>
-        </header>
+                <div>
+                    <p class="kicker">EIER</p>
+                    <h4>Martine Jensen</h4>
+                </div>
+            </section>
+        </section>
+    </section>
 
-        
-<!--------------------------- VIEW AD FOR MISSING/FOUND ANIMAL --------------------------->
     
-    <section class="ad">
-        <h1>Tassen</h1>
-        <img src="./assets/kart.jpg" class="ad-map">
-    </section>
 
-
-  
-
-     <!-- Ad site desktop + mobile -->
-     <p> Knapper til annonse desktop + mobil </p>
-     <button class="button-gray"><img src="./assets/icons/black/arrow-left_black_icon.svg">Tilbake</button>  <br>
-     <button class="button-green">Del annonse</button> <br>
-     <button class="button-green"><img src="./assets/icons/white/phone-white.svg">90745657<img src=""></button> <br>
-     <button class="button-green">Se i kart<img src="./assets/icons/white/arrow-right_white_icon.svg"></button>  <br>
-
-    <section>
-        <h2>Informasjon</h2>
-        <p></p>
-        <h2>Utseende</h2>
-        <p></p>
-    </section>
+    <section class="info">
+        <section class="informasjon">
+            <h4>Informasjon</h4>
+            <div class="columns">
+                <div class="column_one">
+                    <p><strong>Savnet</strong></p>
+                    <p><strong>Område</strong></p>
+                    <p><strong>Adresse</strong></p>
+                    <p><strong>ID-merking</strong></p>
+                    <p><strong>Eier</strong></p>
+                </div>
+                <div class="column_two">
+                    <p>28. oktober 2022</p>
+                    <p>Oslo</p>
+                    <p>John Igrens vei 67</p>
+                    <a href="#"><p>DyreID, MittSpor</p></a>
+                    <p>Martine Jensen</p>
+                </div>
+            </div>
+        </section>
+        <section class="utseende">
+            <section class="informasjon">
+                <h4>Utseende</h4>
+                <div class="columns">
+                    <div class="column_one">
+                        <p><strong>Rase</strong></p>
+                        <p><strong>Kjønn</strong></p>
+                        <p><strong>Pels</strong></p>
+                        <p><strong>Kjennetegn</strong></p>
+                    </div>
+                    <div class="column_two">
+                        <p>Golden retriever</p>
+                        <p>Hann</p>
+                        <p>Beige, mellomlangt</p>
+                        <p>Svart snute</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        </section>
+        <section class="kontakt">
+            <section class="all_items">
+                <h4>Kontakt eier</h4>
+                <div class="columns">
+                    <div class="column_one">
+                        <p><strong>Eier</strong></p>
+                        <p><strong>Adresse</strong></p>
+                        <p><strong>Postnummer</strong></p>
+                        <p><strong>Mobil</strong></p>
+                        <p><strong>E-post</strong></p>
+                    </div>
+                    <div class="column_two">
+                        <p>Martine Jensen</p>
+                        <p>Storgata 43A</p>
+                        <p>0160 Oslo</p>
+                        <p>476 65 351</p>
+                        <p>martine.jens1@gmail.com</p>
+                    </div>
+                </div>
+            </section>
 
 </main>
 </body>
